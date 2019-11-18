@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#585C61</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="add_expenseB">#8FFFFFFF</color>
+    <color name="money_backgroundET">#54FFFFFF</color>
+    <color name="money_textET">#FFFFFF</color>
+    <color name="moneyExpense">#F44336</color>
+    <color name="moneyBudget">#4CAF50</color>
+    <color name="add_button_background">#00FFFFFF</color>
+    <color name="category_background">#FFFF</color>
+</resources>

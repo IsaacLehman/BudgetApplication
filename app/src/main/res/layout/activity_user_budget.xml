@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserBudgetActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/moneyBudget">
+
+        <LinearLayout
+            android:id="@+id/linerLayoutbudgetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_edittext_white">
+
+            <TextView
+                android:id="@+id/budgetCategoryTitleTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/bc_title_text"
+                android:textColor="@color/moneyBudget"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/month_yearT"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOff="@string/year_switch"
+                android:textOn="@string/month_switch"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/dividerV"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/darker_gray" />
+
+        <ListView
+            android:id="@+id/listViewUserB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:paddingStart="15dp"
+            android:scrollbars="none"
+            android:paddingEnd="15dp"
+            android:footerDividersEnabled="false" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
